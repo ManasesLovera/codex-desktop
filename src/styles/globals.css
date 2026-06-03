@@ -1,0 +1,23 @@
+/* Import design tokens first (custom properties) so @tailwind and base can reference */
+@import "./tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base app styles — use tokens, no ad-hoc colors per rules */
+:root {
+  font-family: var(--cdx-font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--cdx-color-fg);
+  background-color: var(--cdx-color-bg);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Placeholder for future global resets / focus styles etc. */
