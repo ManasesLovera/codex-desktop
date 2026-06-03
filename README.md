@@ -17,7 +17,7 @@ documentation in [`docs/`](docs/). Start with [`CLAUDE.md`](CLAUDE.md) and
 
 | | |
 |---|---|
-| Phase | **0 — scaffolding** (see roadmap) |
+| Phase | **0 — scaffolding** (initial template + layout complete; see roadmap) |
 | Platform | Linux (X11 + Wayland via WebKitGTK) |
 | License | TBD |
 
@@ -80,9 +80,7 @@ cd codex-desktop
 npm install          # installs frontend deps (and @tauri-apps/cli if used)
 ```
 
-> Until Phase 0 lands `src-tauri/`, the above scaffolds from
-> `docs/09-implementation-roadmap.md`. The roadmap lists the exact
-> `npm create tauri-app` / cargo steps to generate the shell.
+> Phase 0 initial scaffolding is complete: `src/` (React frontend) and `src-tauri/` (Rust core) were created with `npm create tauri-app@latest -- --template react-ts` and reorganized to match [`docs/03-project-structure.md`](docs/03-project-structure.md). Continue with the remaining Phase 0 items in [`docs/09-implementation-roadmap.md`](docs/09-implementation-roadmap.md) (SQLite + sqlx, ts-rs bindings, typed IPC, CI, etc.).
 
 ---
 
