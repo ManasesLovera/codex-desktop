@@ -131,8 +131,7 @@ npm run test:e2e
 npm run tauri build
 ```
 
-See `README.md` for full setup. Until `src-tauri/` exists, follow
-`docs/09-implementation-roadmap.md` Phase 0.
+See `README.md` for full setup. Initial `src-tauri/` + `src/` scaffolding (Phase 0) is complete per `docs/09-implementation-roadmap.md`. Continue with the remaining Phase 0 steps (SQLx, ts-rs, IPC, CI, etc.).
 
 ## 6. Rules for AI agents working here
 
